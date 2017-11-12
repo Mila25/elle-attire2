@@ -6,6 +6,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="${contextRoot}/home">Elle Attire</a>
             </div>
@@ -13,11 +15,20 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="${contextRoot}/about">About</a>
+                    <li id="about">
+                    <a href="${contextRoot}/about">About</a>
                     </li>
-                    <li><a href="${contextRoot}/listProducts">View Products</a>
+                    <li id="listProducts">
+                    <a href="${contextRoot}/listProducts">View Products</a>
                     </li>
-                    <li><a href="${contextRoot}/contact">Contact</a>
+                    <li id="contact">
+                    <a href="${contextRoot}/contact">Contact</a>
+                    </li>
+                    <li id="login">
+                    <a href="${contextRoot}/login">Login</a>
+                    </li>
+                    <li id="register">
+                    <a href="${contextRoot}/register">Register</a>
                     </li>
                 </ul>
             </div>

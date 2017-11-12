@@ -32,4 +32,30 @@ public class PageController {
 		return mv;
 
 	}
+
+	@RequestMapping(value = "/login")
+	public ModelAndView login() {
+		ModelAndView mv = new ModelAndView("page");
+		mv.addObject("title", "Login");
+		mv.addObject("userClickLogin", true);
+		return mv;
+
+	}
+
+	@RequestMapping(value = "/register")
+	public ModelAndView register() {
+		ModelAndView mv = new ModelAndView("page");
+		mv.addObject("title", "Register");
+		mv.addObject("userClickRegister", true);
+		return mv;
+
+	}
+
+	@RequestMapping(value = "/listProducts")
+	public ModelAndView listProducts() {
+		ModelAndView mv = new ModelAndView("page");
+		mv.addObject("title", "View Products");
+		mv.addObject("userClickListProducts", true);
+		return mv;
+	}
 }

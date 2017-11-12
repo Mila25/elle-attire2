@@ -4,11 +4,11 @@
         <div class="row">
 
             <div class="col-md-3">
-                <p class="lead">Shop Name</p>
+                <p class="lead">The Perfect Store to Shop for Women</p>
                 <div class="list-group">
-                    <a href="#" class="list-group-item">Printable</a>
-                    <a href="#" class="list-group-item">Cupcake Wrappers</a>
-                    <a href="#" class="list-group-item">Authentic Dragon Bones</a>
+                    <a href="#" class="list-group-item">Ethnic</a>
+                    <a href="#" class="list-group-item">Western</a>
+                    <a href="#" class="list-group-item">Casual</a>
                 </div>
             </div>
 

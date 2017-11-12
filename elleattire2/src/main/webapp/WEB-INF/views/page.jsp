@@ -16,28 +16,43 @@
 
 <body>
 
+<div class="wrapper">
     
    <!-- NAVIGATION -->
- <%@include file = "./shared/navbar.jsp" %>
+   <%@include file = "./shared/navbar.jsp" %>
 
-    <!-- PAGE CONTENT -->
-  
-<!-- LOADING THE HOME CONTENT -->
-
-  <c:if test="${userClickHome == true }">
-  <%@include file = "home.jsp" %>
-    </c:if>
-    
-  <!-- LOAD ONLY IF USER CLICKS ABOUT -->
-     <c:if test="${userClickAbout == true }">
-  <%@include file = "about.jsp" %>
-    </c:if>
-    
-  <!-- LOAD ONLY IF USER CLICKS CONTACT -->
-    <c:if test="${userClickContact == true }">
-  <%@include file = "contact.jsp" %>
-    </c:if>
-   
+	   <!-- PAGE CONTENT -->
+	 <div class="content">
+	  
+	  <!-- LOADING THE HOME CONTENT -->
+	
+	  <c:if test="${userClickHome == true }">
+	  	<%@include file = "home.jsp" %>
+	  </c:if>
+	    
+	  <!-- LOAD ONLY IF USER CLICKS ABOUT -->
+	  <c:if test="${userClickAbout == true }">
+	    <%@include file = "about.jsp" %>
+	  </c:if>
+	    
+	  <!-- LOAD ONLY IF USER CLICKS CONTACT -->
+	  <c:if test="${userClickContact == true }">
+	    <%@include file = "contact.jsp" %>
+	  </c:if>
+	  
+	   <c:if test="${userClickLogin == true }">
+	    <%@include file = "login.jsp" %>
+	  </c:if>
+	  
+	   <c:if test="${userClickRegister == true }">
+	    <%@include file = "register.jsp" %>
+	  </c:if>
+	  
+	   <c:if test="${userClickListProducts == true }">
+	    <%@include file = "listProducts.jsp" %>
+	  </c:if>
+	  
+	 </div>   
 
     <!-- FOOTER -->
    <%@include file = "./shared/footer.jsp" %>
@@ -47,7 +62,12 @@
     <script src="${js}/jquery-1.10.2.js"></script>
     <script src="${js}/bootstrap.js"></script>
 
-</body>
+	<!-- SELF CODED JAVASCRIPT -->
+	<script src="${js}/myapp.js"></script>
+
+</div>
+
+</body> 
 
 </html>
 
