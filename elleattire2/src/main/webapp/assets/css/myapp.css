@@ -1,11 +1,5 @@
-html {
-	 height: 100%;
-}
-
-
 body {
-  padding-top: 70px;
-  height:100%;
+  padding-top: 70px
 }
 
 .slide-image {
@@ -28,7 +22,7 @@ body {
 .caption h4 {
   white-space: nowrap;
 }
- 
+
 .thumbnail img {
   width: 100%;
 }
@@ -49,26 +43,5 @@ body {
 }
 
 footer {
-  margin: 0;
-}
-
-
-
-/* CUSTOM STYLING */
-
-.wrapper{
-	min-height:100%;
-	position:relative;
-		
-}
-
-.content{
-	padding-bottom: 60px; /*HEIGHT OF FOOTER  */
-	
-}
-.footer{
-	
-position:absolute;
-bottom:15px;
-height:60px;
+  margin: 50px 0;
 }

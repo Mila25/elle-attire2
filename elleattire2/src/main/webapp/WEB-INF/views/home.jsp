@@ -1,10 +1,9 @@
-
-    <div class="container">
+<div class="container">
 
         <div class="row">
 
             <div class="col-md-3">
-                <p class="lead">The Perfect Store to Shop for Women</p>
+                <p class="lead">Elle Attire</p>
                 <div class="list-group">
                     <a href="#" class="list-group-item">Ethnic</a>
                     <a href="#" class="list-group-item">Western</a>
@@ -17,6 +16,7 @@
                 <div class="row carousel-holder">
 
                     <div class="col-md-12">
+
                         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                             <ol class="carousel-indicators">
                                 <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -25,13 +25,13 @@
                             </ol>
                             <div class="carousel-inner">
                                 <div class="item active">
-                                    <img class="slide-image" src="http://placehold.it/800x300" alt="">
+                                    <img class="slide-image" src="E:\ethnic.jpg" alt="ethnic">
                                 </div>
                                 <div class="item">
-                                    <img class="slide-image" src="http://placehold.it/800x300" alt="">
+                                    <img class="slide-image" src="E:\western.jpg" alt="western">
                                 </div>
                                 <div class="item">
-                                    <img class="slide-image" src="http://placehold.it/800x300" alt="">
+                                    <img class="slide-image" src="E:\casual.jpg" alt="casual">
                                 </div>
                             </div>
                             <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
@@ -171,4 +171,4 @@
         </div>
 
     </div>
- 
+   

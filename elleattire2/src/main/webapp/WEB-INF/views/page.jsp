@@ -59,7 +59,7 @@
    
 
     <!-- JavaScript -->
-    <script src="${js}/jquery-1.10.2.js"></script>
+    <script src="${js}/jquery.js"></script>
     <script src="${js}/bootstrap.js"></script>
 
 	<!-- SELF CODED JAVASCRIPT -->
@@ -70,4 +70,5 @@
 </body> 
 
 </html>
+
 
