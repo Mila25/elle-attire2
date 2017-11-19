@@ -1,14 +1,9 @@
 <div class="container">
 
-        <div class="row">
+         <div class="row">
 
             <div class="col-md-3">
-                <p class="lead">Elle Attire</p>
-                <div class="list-group">
-                    <a href="#" class="list-group-item">Ethnic</a>
-                    <a href="#" class="list-group-item">Western</a>
-                    <a href="#" class="list-group-item">Casual</a>
-                </div>
+               <%@include file="./shared/sidebar.jsp" %>
             </div>
 
             <div class="col-md-9">

@@ -22,39 +22,40 @@
    <%@include file = "./shared/navbar.jsp" %>
 
 	   <!-- PAGE CONTENT -->
-	 <div class="content">
-	  
-	  <!-- LOADING THE HOME CONTENT -->
-	
-	  <c:if test="${userClickHome == true }">
-	  	<%@include file = "home.jsp" %>
-	  </c:if>
-	    
-	  <!-- LOAD ONLY IF USER CLICKS ABOUT -->
-	  <c:if test="${userClickAbout == true }">
-	    <%@include file = "about.jsp" %>
-	  </c:if>
-	    
-	  <!-- LOAD ONLY IF USER CLICKS CONTACT -->
-	  <c:if test="${userClickContact == true }">
-	    <%@include file = "contact.jsp" %>
-	  </c:if>
-	  
-	   <c:if test="${userClickLogin == true }">
-	    <%@include file = "login.jsp" %>
-	  </c:if>
-	  
-	   <c:if test="${userClickRegister == true }">
-	    <%@include file = "register.jsp" %>
-	  </c:if>
-	  
-	   <c:if test="${userClickListProducts == true }">
-	    <%@include file = "listProducts.jsp" %>
-	  </c:if>
-	  
-	 </div>   
 
-    <!-- FOOTER -->
+		<div class="content">
+
+			<!-- LOADING THE HOME CONTENT -->
+
+			<c:if test="${userClickHome == true }">
+				<%@include file="home.jsp"%>
+			</c:if>
+
+			<!-- LOAD ONLY IF USER CLICKS ABOUT -->
+			<c:if test="${userClickAbout == true }">
+				<%@include file="about.jsp"%>
+			</c:if>
+
+			<!-- LOAD ONLY IF USER CLICKS CONTACT -->
+			<c:if test="${userClickContact == true }">
+				<%@include file="contact.jsp"%>
+			</c:if>
+
+			<%-- <c:if test="${userClickLogin == true }">
+				<%@include file="login.jsp"%>
+			</c:if>
+
+			<c:if test="${userClickRegister == true }">
+				<%@include file="register.jsp"%>
+			</c:if>
+
+			<c:if test="${userClickListProducts == true }">
+				<%@include file="listProducts.jsp"%>
+			</c:if> --%>
+
+		</div>
+
+		<!-- FOOTER -->
    <%@include file = "./shared/footer.jsp" %>
    
 

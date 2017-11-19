@@ -5,12 +5,12 @@
 <meta name="author" content="">
 
 <title>Elle Attire - ${title}</title>
-<!-- <script>
+<script>
 	window.menu = '${title}';
-</script> -->
+</script>
 <!-- Bootstrap core CSS -->
 <link href="${css}/bootstrap.css" rel="stylesheet">
-
+ 
 <%-- <!-- Bootstrap readable theme -->
 <link href="${css}/bootstrap-readable-theme.css" rel="stylesheet">
  --%>

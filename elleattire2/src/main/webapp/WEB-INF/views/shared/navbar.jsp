@@ -24,12 +24,12 @@
                     <li id="contact">
                     <a href="${contextRoot}/contact">Contact</a>
                     </li>
-                    <li id="login">
+                    <%-- <li id="login">
                     <a href="${contextRoot}/login">Login</a>
                     </li>
                     <li id="register">
                     <a href="${contextRoot}/register">Register</a>
-                    </li>
+                    </li> --%>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

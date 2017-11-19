@@ -13,7 +13,12 @@
 	</properties>
 
 	<dependencies>
-
+	<!-- LINK BACKEND PROJECT -->
+ 		<dependency>
+ 		<groupId>org.niit</groupId>
+	<artifactId>ellebackend2</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	</dependency>
 		<!-- JAVA EE API -->
 		<!-- https://mvnrepository.com/artifact/javax/javaee-api -->
 		<dependency>
@@ -39,7 +44,8 @@
 			<artifactId>spring-webmvc</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
-		<!-- SPRING -->
+		
+		<!-- JSTL -->
 
 		<dependency>
 			<groupId>jstl</groupId>

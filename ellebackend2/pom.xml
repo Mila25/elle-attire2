@@ -3,15 +3,16 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>org.niit</groupId>
-	<artifactId>elleattirebackend2</artifactId>
+	<artifactId>ellebackend2</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>elleattirebackend2</name>
+	<name>ellebackend2</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<spring.version>4.3.6.RELEASE</spring.version>
 	</properties>
 
 	<dependencies>
@@ -21,7 +22,17 @@
 			<version>3.8.1</version>
 			<scope>test</scope>
 		</dependency>
+
+		<!-- SPRING -->
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
 	</dependencies>
+
 	<build>
 		<plugins>
 			<!-- UPDATE TO LATEST VERSION OF JAVA -->
@@ -34,5 +45,6 @@
 				</configuration>
 			</plugin>
 		</plugins>
+
 	</build>
 </project>

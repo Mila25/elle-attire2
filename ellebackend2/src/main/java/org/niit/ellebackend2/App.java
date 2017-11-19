@@ -1,4 +1,4 @@
-package org.niit.elleattirebackend2;
+package org.niit.ellebackend2;
 
 /**
  * Hello world!
