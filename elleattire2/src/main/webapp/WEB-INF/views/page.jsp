@@ -47,11 +47,13 @@
 
 			<c:if test="${userClickRegister == true }">
 				<%@include file="register.jsp"%>
-			</c:if>
-
-			<c:if test="${userClickListProducts == true }">
-				<%@include file="listProducts.jsp"%>
 			</c:if> --%>
+			
+			
+			<!-- LOAD ONLY IF USER CLICKS list products -->
+			<c:if test="${userClickAllProducts == true or userClickCategoryProducts }">
+				<%@include file="listProducts.jsp"%>
+			</c:if> 
 
 		</div>
 
