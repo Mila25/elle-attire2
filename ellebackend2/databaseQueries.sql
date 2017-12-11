@@ -10,3 +10,6 @@ CREATE TABLE category (
 	
 
 );
+
+INSERT INTO category (name,description,image_url,is_active) VALUES ('Casual', 'Stay comfort and Casual in your attire', 'tom3.png', true);
+INSERT INTO category (name,description,image_url,is_active) VALUES ('Western', 'It is still Special in Clothing', 'tom4.png', true);
