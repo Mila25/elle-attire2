@@ -5,10 +5,10 @@
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; Company 2013 - Template by <a href="http://maxoffsky.com/">Maks</a>
+                    <p>Copyright &copy; Company Mila Website-2017
                     </p>
                 </div>
             </div>
         </footer>
-
+</div>
 

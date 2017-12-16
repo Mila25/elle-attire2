@@ -1,24 +1,36 @@
 package org.niit.elleattire2.controller;
 
+import org.niit.elleattire2.exception.ProductNotFoundException;
 import org.niit.ellebackend2.dao.CategoryDAO;
+import org.niit.ellebackend2.dao.ProductDAO;
 import org.niit.ellebackend2.dto.Category;
+import org.niit.ellebackend2.dto.Product;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
-
+	
 @Controller
 public class PageController {
 
+	private static final Logger logger = LoggerFactory.getLogger(PageController.class);
 	@Autowired
 	private CategoryDAO categoryDAO;
+	
+	@Autowired
+	private ProductDAO productDAO;
 	
 	
 	@RequestMapping(value = { "/", "/home", "/index" })
 	public ModelAndView index() {
 		ModelAndView mv = new ModelAndView("page");
 		mv.addObject("title", "Home");
+		
+		logger.info("Inside PageController index method - INFO");
+		logger.debug("Inside PageController index method - DEBUG");
 		
 		//passing the list of categories
 		mv.addObject("categories", categoryDAO.list());
@@ -94,4 +106,32 @@ public class PageController {
 		return mv;
 
 	}*/
+
+
+	/*
+	 * Viewing a Single Product
+	 * */
+	@RequestMapping(value = "/show/{id}/product")
+	public ModelAndView showSingleProduct(@PathVariable int id) throws ProductNotFoundException {
+		 
+		ModelAndView mv = new ModelAndView("page");
+		Product product = productDAO.get(id);
+		
+		if(product == null) throw new ProductNotFoundException();
+		
+		//updating the view count
+		product.setViews(product.getViews() + 1);
+		productDAO.update(product);
+		//
+		
+		mv.addObject("title", product.getName());
+		mv.addObject("product", product);
+		mv.addObject("userClickShowProduct", true);
+		
+		
+		return mv;
+	}
 }
+
+
+

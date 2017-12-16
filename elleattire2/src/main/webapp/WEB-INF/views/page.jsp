@@ -3,6 +3,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"  %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 
+
 <spring:url var="css" value="/resources/css"/>
 <spring:url var="js" value="/resources/js"/>
 <spring:url var="images" value="/resources/images"/>
@@ -55,16 +56,34 @@
 				<%@include file="listProducts.jsp"%>
 			</c:if> 
 
+			<!-- LOAD ONLY IF USER CLICKS Show product -->
+			<c:if test="${userClickShowProduct == true }">
+				<%@include file="singleProduct.jsp"%>
+			</c:if> 
+			
+			<!-- LOAD ONLY IF USER CLICKS Manage products -->
+			<c:if test="${userClickManageProducts == true }">
+				<%@include file="manageProducts.jsp"%>
+			</c:if>
+			
 		</div>
 
 		<!-- FOOTER -->
    <%@include file = "./shared/footer.jsp" %>
    
 
-    <!-- JavaScript -->
+    <!-- JQuery -->
     <script src="${js}/jquery.js"></script>
+    
+    <!-- BootStrap Core JavaScript -->
     <script src="${js}/bootstrap.js"></script>
-
+    
+    <!-- DataTable Plugin -->
+    <script src="${js}/jquery.dataTables.js"></script>
+    
+    <!-- DataTable Bootstrap Script -->
+    <script src="${js}/dataTables.bootstrap.js"></script>
+    
 	<!-- SELF CODED JAVASCRIPT -->
 	<script src="${js}/myapp.js"></script>
 

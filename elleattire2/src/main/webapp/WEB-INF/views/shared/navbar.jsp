@@ -27,6 +27,10 @@
                     <a href="${contextRoot}/show/all/products">View Products</a>
                     </li>
                     
+                    <li id="manageProducts">
+                    <a href="${contextRoot}/manage/products">Manage Products</a>
+                    </li>
+                    
                     
                     <%-- <li id="login">
                     <a href="${contextRoot}/login">Login</a>
