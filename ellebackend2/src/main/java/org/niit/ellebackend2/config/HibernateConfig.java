@@ -63,17 +63,18 @@ public class HibernateConfig {
 		properties.put("hibernate.dialect", DATABASE_DIALECT);
 		properties.put("hibernate.show_sql", "true");
 		properties.put("hibernate.format_sql", "true");
+	
+		properties.put("hibernate.hbm2ddl.auto", "create");
 		
 		return properties;
 	}
 	
 //transcationManager bean
-@Bean
-public HibernateTransactionManager getTransactionManager(SessionFactory sessionFactory)
-{
-	HibernateTransactionManager transactionManager = new HibernateTransactionManager(sessionFactory); 
-	return transactionManager;
-}
+	@Bean
+	public HibernateTransactionManager getTransactionManager(SessionFactory sessionFactory) {
+		HibernateTransactionManager transactionManager = new HibernateTransactionManager(sessionFactory);
+		return transactionManager;
+	}
 	
 	
 }
